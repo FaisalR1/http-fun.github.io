@@ -1,0 +1,163 @@
+<html><head>
+<link type="text/css" href="http://anicrack-indo.netii.net/error.css" rel="stylesheet">
+<style>
+.drop { position: absolute; width: 3;  filter: flipV(), flipH(); font-size: 40; color: blue }
+</style>
+<script language="javascript">
+
+//Hujan/ effect- By Mr.Yka37 dapsquad.blosgpot.com
+//tutorial by me khatami :)
+//Visit http://www.dynamicdrive.com for this script and more
+
+snow = false;    // false-rain;   true-snow
+snowsym = " * "  //These are the symbols for each
+rainsym = " ' "  //You can put images here.
+howmany = 10     //How many drops/snowflakes?
+
+/**************Jangan hapus ini ***********/
+if(snow){sym = snowsym; speed=1; angle=10; drops=howmany}
+else{sym = rainsym; speed=50; drops=howmany; angle=6}
+movex = -speed/angle; movey = speed; count = 0;
+
+function moverain(){
+for(move = 0; move < drops; move++){
+xx[move]+=movex;  yy[move]+=mv[move];
+hmm = Math.round(Math.random()*1);
+if(xx[move] < 0){xx[move] = maxx+10;}
+if(yy[move] > maxy){yy[move] = 10;}
+drop[move].left = xx[move]
+drop[move].top = yy[move]+document.body.scrollTop;
+}setTimeout('moverain()','1')}
+</script><title>Lumajang BlackHat</title></head>
+<body>
+<br>
+<link href='http://fonts.googleapis.com/css?family=Orbitron:700' 	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet' type='text/css'>
+<body bgcolor="#000000" background =""></body>
+<center>
+<SCRIPT> 
+farbbibliothek = new Array(); 
+farbbibliothek[0] = new Array("#FF0000","#FF1100","#FF2200","#FF3300","#FF4400","#FF5500","#FF6600","#FF7700","#FF8800","#FF9900","#FFaa00","#FFbb00","#FFcc00","#FFdd00","#FFee00","#FFff00","#FFee00","#FFdd00","#FFcc00","#FFbb00","#FFaa00","#FF9900","#FF8800","#FF7700","#FF6600","#FF5500","#FF4400","#FF3300","#FF2200","#FF1100"); 
+farbbibliothek[1] = new Array("#00FF00","#000000","#00FF00","#00FF00"); 
+farbbibliothek[2] = new Array("#00FF00","#FF0000","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00"); 
+farbbibliothek[3] = new Array("#FF0000","#FF4000","#FF8000","#FFC000","#FFFF00","#C0FF00","#80FF00","#40FF00","#00FF00","#00FF40","#00FF80","#00FFC0","#00FFFF","#00C0FF","#0080FF","#0040FF","#0000FF","#4000FF","#8000FF","#C000FF","#FF00FF","#FF00C0","#FF0080","#FF0040"); 
+farbbibliothek[4] = new Array("#FF0000","#EE0000","#DD0000","#CC0000","#BB0000","#AA0000","#990000","#880000","#770000","#660000","#550000","#440000","#330000","#220000","#110000","#000000","#110000","#220000","#330000","#440000","#550000","#660000","#770000","#880000","#990000","#AA0000","#BB0000","#CC0000","#DD0000","#EE0000"); 
+farbbibliothek[5] = new Array("#000000","#000000","#000000","#FFFFFF","#FFFFFF","#FFFFFF"); 
+farbbibliothek[6] = new Array("#33CCFF","#33CCCC","#33CC99","#33CC66","#33CC33","#33CC00"); 
+farbbibliothek[7] = new Array("#00dbdb","#00afdb","#0083db","#0058db","#002cdb","#2c00db","#5800db","#8300db","#af00db","#db00db"); 
+farbbibliothek[8] = new Array("#ffd8f4","#ffcff2","#ffc6f0","#ffbded","#ffb4eb","#ffabe8","#ffa2e6","#ff99e3","#ff90e1","#ff87de","#ff7edc","#ff75d9","#ff6cd7","#ff63d5","#ff5ad3","#ff51d1","#ff48cf","#ff3fcd","#ff36cb","#ff2dc9","#ff24c7","#ff1bc5","#ff12c3","#ff09c1","#f600b8","#ed00b1","#e400aa","#db00a3","#d2009c","#c90095","#c0008e","#b70087","#ae0080","#a50079","#9c0072","#93006b","#8a0064","#81005d","#780056","#6f004f","#660048","#5d0042","#54003b","#4b0035","#42002f","#390028","#300022","#27001b"); 
+farben = farbbibliothek[4];
+function farbschrift() 
+{ 
+for(var i=0 ; i<Buchstabe.length; i++) 
+{ 
+document.all["a"+i].style.color=farben[i]; 
+} 
+farbverlauf(); 
+} 
+function string2array(text) 
+{ 
+Buchstabe = new Array(); 
+while(farben.length<text.length) 
+{ 
+farben = farben.concat(farben); 
+} 
+k=0; 
+while(k<=text.length) 
+{ 
+Buchstabe[k] = text.charAt(k); 
+k++; 
+} 
+} 
+function divserzeugen() 
+{ 
+for(var i=0 ; i<Buchstabe.length; i++) 
+{ 
+document.write("<b><font face='monotype corsiva' size=30><span id='a"+i+"' class='a"+i+"'>"+Buchstabe[i] + "</span></font></b>"); 
+} 
+farbschrift(); 
+} 
+var a=1; 
+function farbverlauf() 
+{ 
+for(var i=0 ; i<farben.length; i++) 
+{ 
+farben[i-1]=farben[i]; 
+} 
+farben[farben.length-1]=farben[-1]; 
+ 
+setTimeout("farbschrift()",30); 
+} 
+var farbsatz=1; 
+function farbtauscher() 
+{ 
+farben = farbbibliothek[farbsatz]; 
+while(farben.length<text.length) 
+{ 
+farben = farben.concat(farben); 
+} 
+farbsatz=Math.floor(Math.random()*(farbbibliothek.length-0.0001)); 
+} 
+setInterval("farbtauscher()",5000); 
+text= "Hacked By ./FaisalR";
+</script><span class='newclass'>
+<script type="text/javascript">
+string2array(text); 
+divserzeugen();
+</script></span>
+<body><center>
+<img src="https://lh3.googleusercontent.com/-aH0iGuWDSIk/XCdclpqlcMI/AAAAAAAAAIs/dklfZ3mZqpUmqP8JBqET4AigLlppI8A_QCLcBGAs/h120/IMG-20181229-WA0020.jpg" width=450px height=340px>
+</body></center>
+<body onload="init()"></body>
+<body>
+<div class="error">
+<div id="bulle"></div>"
+<script language="JavaScript">
+var i=0
+var j=0
+var texteNE, affiche
+var texte="<br><br><br><br><br><font face=Orbitron color=white size=4>Lumajang BlackHat<br>Kami telah bangkit dari masa kelam<br>jangan anggap kota kecilku buallan ingat kami selalu ada meskipun tak dibutuhkan!! camkan lumajang bbersama indonesia<br><br></font><br></b></div>"
+var ie = (document.all);
+var ne = (document.layers); 
+function init(){
+texteNE='';
+machine_a_ecrire();
+}
+function machine_a_ecrire(){
+texteNE=texteNE+texte.charAt(i)
+affiche='<font face=Orbitron size=1 color=#ffffff><strong>Messenge : '+texteNE+'</strong></font>'
+if (texte.charAt(i)=="<") {
+j=1
+}
+if (texte.charAt(i)==">") {
+j=0
+}
+if (j==0) {
+if (document.getElementById) { // avec internet explorer
+document.getElementById("bulle").innerHTML = affiche;
+}
+}
+if (i<texte.length-1){
+i++
+setTimeout("machine_a_ecrire()",70)
+}
+else
+return
+}
+</script><font face="Orbitron" size="1"><blink><span style="color: rgb(255, 255, 255);"><b><font color=lime size=4></font></b></u></blink><br></font></b>
+</body>
+<!-- CSS --><style>
+.CenterDiv{width:650px;border:1px #ff0000 solid;padding:5px;margin:0px auto; background: url('http://i.imgur.com/sDbaMsW.gif');}
+</style>
+<br>
+<br>
+<br><p class="style14" align="center">
+<marquee scrolldelay="20" scrollamount="145" direction="right" behavior="scroll" width="98%">
+<b><font color="white" face="Courier New" size="5">   --------------------------------------------------------------</marquee></b></font>
+<marquee scrolldelay="20" scrollamount="8" direction="left" behavior="scroll" width="98%">
+<font color="#ff0000" face="Courier New" size="5">Bima,FaisalR,Dimas,Alvian</marquee></font>
+<br>
+<marquee scrolldelay="20" scrollamount="145" direction="left" behavior="scroll" width="98%">
+<b><font color="white" face="Courier New" size="5">   --------------------------------------------------------------</marquee></b></font>
+<iframe width="0" height="0" src="http://www.youtube.com/v/uGpwXHbmo5E&autoplay=1" frameborder="0"></iframe>
